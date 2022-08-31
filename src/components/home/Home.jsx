@@ -14,7 +14,14 @@ const Home = () => {
                     {socials.map(social => {
                         const { id, url, text } = social;
                         return (
-                            <a key={id} href={url} target="_blank" rel="noreferrer" className="home__socials-link">{text}</a>
+                            <a
+                                key={id}
+                                href={url}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="home__socials-link">
+                                {text}
+                            </a>
                         )
                     })}
                     <span className="line-before"></span>

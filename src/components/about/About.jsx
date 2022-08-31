@@ -2,6 +2,13 @@ import React from "react";
 import { resume, skills, rest } from "./data";
 
 const About = () => {
+
+    const openText = (e) => {
+        if (e.target.innerText.description !== "") {
+            e.target.classList.toggle("show-paragraph")
+        }  
+    }
+
     return (
         <section className="about section container" id="about">
             <h1 className="section__title about__section-title">o meni</h1>
@@ -16,7 +23,7 @@ const About = () => {
                                 <p>{company}</p>
                                 <p>{sector}</p>
                                 <p>{position}</p>
-                                <p>{description}</p>
+                                <p onClick={openText}>{description}</p>
                             </article>
                         )
                     })}
@@ -30,7 +37,7 @@ const About = () => {
                                 <p>{year}</p>
                                 <p>{title}</p>
                                 <p>{school}</p>
-                                <p>{description}</p>
+                                <p onClick={openText}>{description}</p>
                             </article>
                         )
                     })}

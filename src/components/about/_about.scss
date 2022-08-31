@@ -20,10 +20,13 @@
             line-height: 150%;
         }
 
-        &-item {
-            position: relative;
+        .about__resume-item {
             margin-bottom: $mb-2;
-            max-width: 20rem;
+            max-width: 80vw;
+
+            @include mixins.breakpoint-up(medium) {
+                max-width: 70vw;
+            }
 
             & p {
                 font-size: $fontMd;
@@ -33,17 +36,26 @@
 
                 &:last-child {
                     border-bottom: 1px solid $firstClr;
-                }
-            }
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    cursor: pointer;
 
-            @include mixins.breakpoint-up(medium) {
-                max-width: initial;
+                    &.show-paragraph {
+                        white-space: normal;
+                    }
+                }
             }
         }
     }
 
     .about__skills {
         margin-bottom: $mb-1;
+        max-width: 80vw;
+
+        @include mixins.breakpoint-up(medium) {
+            max-width: 70vw;
+        }
 
         .about__resume-title {
             color: $textClr;
@@ -60,16 +72,29 @@
                 color: $textClr;
                 margin-bottom: $mb-0-5;
                 line-height: 150%;
-            }
 
-            &:last-child {
-                border-bottom: 1px solid $firstClr;
+                &:last-child {
+                    border-bottom: 1px solid $firstClr;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    cursor: pointer;
+
+                    &.show-paragraph {
+                        white-space: normal;
+                    }
+                }
             }
         }
     }
 
     .about__rest {
         margin-bottom: $mb-1;
+        max-width: 80vw;
+
+        @include mixins.breakpoint-up(medium) {
+            max-width: 70vw;
+        }
 
         .about__rest-item {
             margin-bottom: .2rem;

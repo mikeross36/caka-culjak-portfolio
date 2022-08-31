@@ -7,7 +7,7 @@ export const resume = [
         company: "Kompanija  Srpsko - Švedska Marsgroup Beočin",
         sector: "Sektor Logistika",
         position: "Pozicija: Rukovodilac sektora",
-        description: "Opis posla: Planiranje, praćenje prodaje gotovog proizvoda, praćenje nabavke repromaterijala,   praćenje rada planera proizvodnje i rada magacina. Organizacija isporuka, izvoz, uvoza, izrada carinske dokumentacije, rad sa špediterima, organizacija transporta. Pisanje procedura i kontrola  proceduralnog rada. Organizacija obuka zaposlenih . Obrada podataka u ERP sistemu  Monitor – insales, porudžbenice, izveštaji, analize. Organizacija rada zaposlenih u sektoru logistike – operativni rad u  prodaji, nabavci, magacinu. Komunikacija sa klijentima u cilju jasnog i preciznog definisanja zahteva i rešavanja eventualnih problema. Vođenje kompletne dokumentacije, praćenje izvršenja planskih zadataka i redovno izveštavanje. Predlozi i rešenja za unapređenje rada sektora logistike."
+        description: "Opis posla  -->  Planiranje, praćenje prodaje gotovog proizvoda, praćenje nabavke repromaterijala, praćenje rada planera proizvodnje i rada magacina. Organizacija isporuka, izvoz, uvoza, izrada carinske dokumentacije, rad sa špediterima, organizacija transporta. Pisanje procedura i kontrola  proceduralnog rada. Organizacija obuka zaposlenih . Obrada podataka u ERP sistemu  Monitor – insales, porudžbenice, izveštaji, analize. Organizacija rada zaposlenih u sektoru logistike – operativni rad u  prodaji, nabavci, magacinu. Komunikacija sa klijentima u cilju jasnog i preciznog definisanja zahteva i rešavanja eventualnih problema. Vođenje kompletne dokumentacije, praćenje izvršenja planskih zadataka i redovno izveštavanje. Predlozi i rešenja za unapređenje rada sektora logistike."
     },
     {
         id: nextId(),
@@ -15,7 +15,7 @@ export const resume = [
         company: "Kompanija: Novosadski sajam",
         sector: "Sektor za sajamsku delatnost",
         position: "Pozicija: Rukovodilac sektora",
-        description: "Opis posla: Organizacija, rukovođenje i koordinacija rada timova u prodaji usluga u pripremanju i realizaciji sajamskih manifestacija i stručnih pratećih događaja. Vođenje projekata, planiranje prihoda i troškova, kontrola i praćenje realizacije zadataka. Rad u marketinškim akitvnostima, istraživanje tržišta,  rad sa medijima, nastupanje u medijima i na press konferencijama. Praćenje naplate i potraživanja komintenata. Saradnja sa državnim institucijama, pisanje dokumentacije za državne konkurse. Posebne veštine u komunikaciji sa velikim brojem kompanija u kreiranju sajamskih događaja"
+        description: "Opis posla  -->  Organizacija, rukovođenje i koordinacija rada timova u prodaji usluga u pripremanju i realizaciji sajamskih manifestacija i stručnih pratećih događaja. Vođenje projekata, planiranje prihoda i troškova, kontrola i praćenje realizacije zadataka. Rad u marketinškim akitvnostima, istraživanje tržišta,  rad sa medijima, nastupanje u medijima i na press konferencijama. Praćenje naplate i potraživanja komintenata. Saradnja sa državnim institucijama, pisanje dokumentacije za državne konkurse. Posebne veštine u komunikaciji sa velikim brojem kompanija u kreiranju sajamskih događaja"
     },
     {
         id: nextId(),
@@ -49,7 +49,7 @@ export const skills = [
         year: "1990 - 1994",
         title: "Visoka stručna sprema",
         school: "Univerzitet u Novom Sadu, Filozofski fakultet, smer lingivstika",
-        description: "Učešće u stručnim skupovima CEFA (međunarodna asocijacija sajmova Centralne evrope) i EASE (asocijacija sajmova jugoistočne evrope) – Minhen, Plovdiv, Ljubljana, Zagreb, Budva. Studijska putovanja - London, Nirnberg, Beč, Salzburg, Budimpešta, Zagreb.Stručno usavršavanje - Švedska, Litvanija"
+        description: "Aktivnosti  -->  Učešće u stručnim skupovima CEFA (međunarodna asocijacija sajmova Centralne evrope) i EASE (asocijacija sajmova jugoistočne evrope) – Minhen, Plovdiv, Ljubljana, Zagreb, Budva. Studijska putovanja - London, Nirnberg, Beč, Salzburg, Budimpešta, Zagreb.Stručno usavršavanje - Švedska, Litvanija"
     },
 ]
 
