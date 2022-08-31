@@ -37,8 +37,8 @@ const Header = () => {
                         {links.map(link => {
                             const { id, url, text } = link;
                             return (
-                                <li key={id} className="nav__item" onClick={closeMobMenu}>
-                                    <a href={url} className="nav__link">{text}</a>
+                                <li key={id} className="nav__item">
+                                    <a href={url} className="nav__link" onClick={closeMobMenu}>{text}</a>
                                 </li>
                             )
                         })}
