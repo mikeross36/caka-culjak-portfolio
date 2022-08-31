@@ -1,0 +1,96 @@
+@use "../../style/mixins";
+@use "../../style/variables" as *;
+
+.about {
+
+    &__container {
+
+        @include mixins.breakpoint-up(xlarge) {
+            padding-top: 2rem;
+        }
+    }
+
+    .about__resume {
+        margin-bottom: $mb-1;
+
+        .about__resume-title {
+            color: $textClr;
+            text-transform: uppercase;
+            margin-bottom: $mb-1;
+            line-height: 150%;
+        }
+
+        &-item {
+            position: relative;
+            margin-bottom: $mb-2;
+            max-width: 20rem;
+
+            & p {
+                font-size: $fontMd;
+                color: $textClr;
+                margin-bottom: $mb-0-5;
+                line-height: 150%;
+
+                &:last-child {
+                    border-bottom: 1px solid $firstClr;
+                }
+            }
+
+            @include mixins.breakpoint-up(medium) {
+                max-width: initial;
+            }
+        }
+    }
+
+    .about__skills {
+        margin-bottom: $mb-1;
+
+        .about__resume-title {
+            color: $textClr;
+            text-transform: uppercase;
+            margin-bottom: $mb-1;
+            line-height: 140%;
+        }
+
+        .about__skills-item {
+            margin-bottom: .2rem;
+
+            & p {
+                font-size: $fontMd;
+                color: $textClr;
+                margin-bottom: $mb-0-5;
+                line-height: 150%;
+            }
+
+            &:last-child {
+                border-bottom: 1px solid $firstClr;
+            }
+        }
+    }
+
+    .about__rest {
+        margin-bottom: $mb-1;
+
+        .about__rest-item {
+            margin-bottom: .2rem;
+
+            & h4 {
+                color: $textClr;
+                text-transform: uppercase;
+                margin-bottom: $mb-1;
+                line-height: 150%;
+            }
+    
+            & p {
+                font-size: $fontMd;
+                color: $textClr;
+                margin-bottom: $mb-0-5;
+                line-height: 140%;
+
+                &:last-child {
+                    border-bottom: 1px solid $firstClr;
+                }
+            }
+        }
+    }
+}

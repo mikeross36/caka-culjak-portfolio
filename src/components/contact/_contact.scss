@@ -1,0 +1,73 @@
+@use "../../style/mixins";
+@use "../../style/variables" as *;
+
+.contact {
+    border-bottom: 2px solid rgba($bodyClr, .7);
+
+    @include mixins.breakpoint-up(xlarge) {
+        padding: 5rem 7%;
+    }
+
+    &__container {
+        display: grid;
+        row-gap: 2rem;
+        padding: 2rem 7%;
+        text-align: center;
+        justify-content: center;
+        background-color: $containerClr;
+
+        @include mixins.breakpoint-up(large){
+            grid-template-columns: max-content 1fr;
+            align-items: center;
+            align-content: end;
+            column-gap: 2rem;
+            padding: 3rem 9%;
+            text-align: initial;
+        }
+
+        .contact__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 1rem;
+
+            @include mixins.breakpoint-up(large){
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            & p {
+                color: $textClrLight;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            & h3 {
+                color: $titleClr;
+                font-size: 1.3rem;
+
+                @include mixins.breakpoint-up(medium){
+                    font-size: $fontSlg;
+                }
+            }
+        }
+
+        .contact__image {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .contact__img {
+                width: 8rem;
+                height: 8rem;
+
+                @include mixins.breakpoint-up(large) {
+                    width: 13rem;
+                    height: 13rem;
+                }
+            }
+        }
+    }
+}

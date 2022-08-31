@@ -1,0 +1,62 @@
+@use "../../style/mixins";
+@use "../../style/variables" as *;
+
+.footer {
+    background-image: linear-gradient(
+        rgba($bodyClr, 1), 
+        rgba($bodyClr, .7)), 
+        url("../../images/home-bcg.jpg");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    &__container {
+        border-top: 1px solid $firstClr;
+        padding-bottom: 1rem;
+
+        .footer__group {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 1rem;
+
+            @include mixins.breakpoint-up(xlarge) {
+               
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        .footer__social {
+            display: flex;
+            justify-content: center;
+            column-gap: 1.5rem;
+            margin-bottom: 2rem;
+
+            @include mixins.breakpoint-up(xlarge) {
+                column-gap: 2rem;
+                margin-bottom: 0;
+            }
+
+            &-link {
+
+                @include mixins.breakpoint-up(xlarge) {
+                    font-size: 1.5rem;
+                }
+
+                &:hover img {
+                    transform: translate(.5rem, -.5rem);
+                    transition: all .4s linear;
+                }
+            }
+        }
+
+        .footer__copy {
+            font-size: $fontSm;
+            color: $textClr;
+        }
+    }
+}
